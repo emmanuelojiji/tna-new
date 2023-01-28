@@ -57,6 +57,7 @@ marquee h1 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
 }
 @media only screen and (max-width: 1008px) {
   #books-container {
@@ -393,7 +394,7 @@ marquee h1 {
   width: 15vw;
   position: absolute;
   left: 80vw;
-  top: 6vw;
+  top: 100px;
   transition: ease 0.3s;
 }
 .scroll-right-desktop:hover {
@@ -412,7 +413,7 @@ marquee h1 {
   position: absolute;
   z-index: 500;
   right: 80vw;
-  top: 6vw;
+  top: 100px;
   transition: ease 0.3s;
 }
 @media only screen and (max-width: 1008px) {
@@ -433,6 +434,7 @@ marquee h1 {
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding-top: 50px;
 }
 @media only screen and (max-width: 1008px) {
   .films-main {

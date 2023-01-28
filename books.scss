@@ -62,6 +62,7 @@ marquee {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
 
   @media only screen and (max-width: $firstBreak) {
     flex-direction: column;
@@ -413,7 +414,7 @@ marquee {
   width: 15vw;
   position: absolute;
   left: 80vw;
-  top: 6vw;
+  top: 100px;
   transition: ease 0.3s;
 
   &:hover {
@@ -433,7 +434,7 @@ marquee {
   position: absolute;
   z-index: 500;
   right: 80vw;
-  top: 6vw;
+  top: 100px;
   transition: ease 0.3s;
   
 
@@ -455,6 +456,7 @@ marquee {
   align-items: center;
   flex-direction: column;
   position: relative;
+  padding-top: 50px;
 
   @media only screen and (max-width: $firstBreak) {
     justify-content: flex-start;
