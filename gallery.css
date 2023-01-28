@@ -1,0 +1,44 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.paper {
+  height: 100%;
+  width: 30%;
+  min-width: 400px;
+  position: relative;
+  background: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.paper:hover {
+  z-index: 4;
+}
+.paper.paper-1 {
+  transform: rotate(-10deg) translateY(50px) translateX(150px);
+}
+.paper.paper-1:hover {
+  transform: rotate(0deg) translateY(50px) translateX(150px);
+}
+.paper.paper-2 {
+  z-index: 3;
+}
+.paper.paper-2:hover {
+  transform: scale(1.05);
+}
+.paper.paper-3 {
+  transform: rotate(10deg) translateY(50px) translateX(-150px);
+}
+.paper.paper-3:hover {
+  transform: rotate(0) translateY(50px) translateX(-150px);
+}/*# sourceMappingURL=gallery.css.map */

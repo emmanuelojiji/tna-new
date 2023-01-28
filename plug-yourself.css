@@ -1,0 +1,114 @@
+.left-right-wrap {
+  display: flex;
+}
+@media only screen and (max-width: 1048px) {
+  .left-right-wrap {
+    flex-direction: column;
+  }
+}
+
+.left {
+  background-color: black;
+  height: 100vh;
+  width: 30%;
+  min-width: 340px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 1048px) {
+  .left {
+    width: 100%;
+  }
+}
+
+.right {
+  background-color: grey;
+  flex: 1;
+  background-image: url(/images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+input[type=email] {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 38px;
+  background-color: transparent;
+  border: solid white 2px;
+  padding-left: 12px;
+  font-size: 20px;
+  color: white;
+}
+input[type=email]::-moz-placeholder {
+  color: white;
+}
+input[type=email]:-ms-input-placeholder {
+  color: white;
+}
+input[type=email]::placeholder {
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  flex: 1;
+  height: 45vh;
+  background-color: transparent;
+  border: solid white 2px;
+  padding-top: 12px;
+  padding-left: 12px;
+  color: white;
+  font-size: 20px;
+  resize: none;
+}
+textarea::-moz-placeholder {
+  color: white;
+}
+textarea:-ms-input-placeholder {
+  color: white;
+}
+textarea::placeholder {
+  color: white;
+}
+
+.square-wrap {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1048px) {
+  .square-wrap {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+.square-wrap-left {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+}
+
+.square-1 {
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.square-2 {
+  background-color: brown;
+}
+
+.square-3 {
+  background-color: green;
+}/*# sourceMappingURL=plug-yourself.css.map */

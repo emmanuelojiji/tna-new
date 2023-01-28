@@ -1,0 +1,51 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.paper {
+  height: 100%;
+  width: 30%;
+  min-width: 400px;
+  position: relative;
+  background: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  
+
+  &:hover {
+    z-index: 4;
+  }
+
+  &.paper-1 {
+    transform: rotate(-10deg) translateY(50px) translateX(150px);
+    &:hover {
+      transform: rotate(0deg) translateY(50px) translateX(150px);
+    }
+  }
+
+  &.paper-2 {
+    z-index: 3;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+  &.paper-3 {
+    transform: rotate(10deg) translateY(50px) translateX(-150px);
+
+    &:hover {
+      transform: rotate(0) translateY(50px) translateX(-150px);
+    }
+  }
+}

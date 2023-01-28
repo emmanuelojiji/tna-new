@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "hvd";
+}
+
+$firstBreak: "1008px";
+
+a {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: $firstBreak) {
+  img {
+    &:hover {
+      pointer-events: none;
+    }
+  }
+}
+
+@font-face {
+  font-family: "hvd";
+  src: url("../hvd.woff") format("woff"), url("hvdtwo.ttf") format("truetype");
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  @media only screen and (max-width: $firstBreak) {
+    overflow-y: auto;
+  }
+}
+
+marquee {
+  min-height: 60px;
+  width: 100%;
+  background-color: black;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+
+  h1 {
+    transform: translateX(-10px);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome, Edge, Opera and Firefox */
+  }
+}
+
+#books-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media only screen and (max-width: $firstBreak) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#left {
+  width: 25vw;
+  margin-right: 20px;
+
+  @media only screen and (max-width: $firstBreak) {
+    width: 70%;
+    margin-right: 0;
+  }
+
+  .book-wrap {
+    &:hover {
+      transform: translateX(-20px);
+      cursor: pointer;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+#right {
+  display: flex;
+  width: 42vw;
+  align-items: flex-end;
+
+  @media only screen and (max-width: $firstBreak) {
+    flex-direction: column;
+    align-items: center;
+    height: 110vw;
+  }
+
+  .book-wrap {
+    &:hover {
+      transform: translateY(-20px);
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: $firstBreak) {
+      transform: rotate(270deg);
+      position: relative;
+      top: -23vw;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+#books-films-wrap {
+  background-color: #00ffab;
+  display: flex;
+  transition: ease 0.5s;
+  height: 100%;
+}
+
+.books-main {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.book-wrap {
+  position: relative;
+  transition: ease 0.3s;
+
+  a {
+    position: absolute;
+    left: 0;
+    color: white;
+    font-size: 1vw;
+  }
+}
+
+#first {
+  position: absolute;
+}
+
+.book-wrap-1 {
+  a {
+    top: 1.5vw;
+    left: 2vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 4vw;
+      top: 3vw;
+      left: 6vw;
+    }
+  }
+}
+
+.book-wrap-2 {
+  a {
+    top: 0.7vw;
+    left: 2vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 3vw;
+      left: 6vw;
+      top: 1.4vw;
+    }
+  }
+}
+
+.book-wrap-3 {
+  a {
+    transform: rotate(270deg);
+    left: 4vw;
+    text-align: center;
+    top: 0vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 3vw;
+      top: -1vw;
+      left: 10vw;
+    }
+  }
+}
+.book-wrap-4 {
+  a {
+    left: 9vw;
+    text-align: center;
+    top: 1.5vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 4vw;
+      top: 3vw;
+      left: 20vw;
+    }
+  }
+}
+
+.book-wrap-5 {
+  a {
+    left: 35px;
+    top: 12px;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 4vw;
+      top: 2vw;
+      left: 10vw;
+    }
+  }
+}
+
+.book-wrap-7 {
+  a {
+    left: 35px;
+    top: 12px;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 3vw;
+      top: 2.5vw;
+      left: 8vw;
+    }
+  }
+}
+
+.book-wrap-8 {
+  a {
+    left: 10px;
+    top: 8px;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 3vw;
+      top: 1.5vw;
+      left: 2.5vw;
+    }
+  }
+}
+
+.book-wrap-9 {
+  a {
+    transform: rotate(270deg);
+    left: 40px;
+    text-align: center;
+    top: 14px;
+
+    @media only screen and (max-width: $firstBreak) {
+      font-size: 4vw;
+      top: 2vw;
+      left: 6vw;
+    }
+  }
+}
+
+.book-wrap-11 {
+  @media only screen and (max-width: $firstBreak) {
+    width: 20vw;
+  }
+
+  a {
+    left: 1.2vw;
+    text-align: center;
+    top: 14px;
+
+    @media only screen and (max-width: $firstBreak) {
+      left: 2.6vw;
+      text-align: center;
+      top: 5vw;
+      font-size: 2.5vw;
+    }
+  }
+
+  #black-africa {
+    font-size: 2vw;
+    display: block;
+  }
+}
+
+.book-wrap-12 {
+  @media only screen and (max-width: $firstBreak) {
+    width: 12vw;
+    position: relative;
+    top: -77vw !important;
+  }
+
+  a {
+    transform: rotate(90deg);
+    width: auto;
+    top: 4vw;
+    right: 0;
+    white-space: nowrap;
+    font-size: 1.3vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      left: 1vw;
+      text-align: center;
+      top: 10vw;
+      font-size: 3.8vw;
+    }
+  }
+}
+
+.book-wrap-13 {
+  @media only screen and (max-width: $firstBreak) {
+    width: 10vw;
+    position: relative;
+    top: -137vw !important;
+  }
+
+  a {
+    transform: rotate(90deg);
+    width: auto;
+    top: 6vw;
+    right: 0;
+    font-size: 1.5vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      left: 1vw;
+      text-align: center;
+      top: 8vw;
+      font-size: 3.5vw;
+    }
+  }
+}
+
+.book-wrap-14 {
+  @media only screen and (max-width: $firstBreak) {
+    width: 6vw;
+    position: relative;
+    top: -198vw !important;
+  }
+
+  a {
+    transform: rotate(90deg);
+    top: 3vw;
+    right: 0;
+    font-size: 1vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      left: 1vw;
+      text-align: center;
+      top: 8vw;
+      font-size: 3vw;
+    }
+  }
+}
+
+.book-wrap-15 {
+
+  &:hover {
+    transform: rotate(10deg) !important;
+  }
+
+  @media only screen and (max-width: $firstBreak) {
+    width: 30vw;
+    transform: rotate(-72deg) !important;
+    position: relative;
+    top: -256vw !important;
+  }
+
+  a {
+    transform: rotate(-12deg);
+    left: 2.3vw;
+    top: 4.5vw;
+    text-align: center;
+
+    @media only screen and (max-width: $firstBreak){
+      left: 4vw;
+      text-align: center;
+      top: 8vw;
+      font-size: 3.5vw; 
+    }
+  }
+}
+
+.book-wrap-16 {
+  @media only screen and (max-width: $firstBreak) {
+    width: 27vw;
+    transform: rotate(-72deg) !important;
+    position: relative;
+    top: -310vw !important;
+    left: -1vw;
+  }
+
+  position: relative;
+  right: 6vw;
+
+  &:hover {
+    transform: rotate(10deg) !important;
+  }
+
+  a {
+    transform: rotate(72deg);
+    top: 6.5vw;
+    left: 1.8vw;
+    font-size: 1.3vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      left: 3.5vw;
+      text-align: center;
+      top: 17vw;
+      font-size: 4.6vw;
+    }
+  }
+}
+
+.scroll-right-desktop {
+  width: 15vw;
+  position: absolute;
+  left: 80vw;
+  top: 6vw;
+  transition: ease 0.3s;
+
+  &:hover {
+    transform: translateX(20px);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: $firstBreak) {
+    display: none;
+  }
+}
+
+/*films*/
+
+.scroll-left-desktop {
+  width: 15vw;
+  position: absolute;
+  z-index: 500;
+  right: 80vw;
+  top: 6vw;
+  transition: ease 0.3s;
+  
+
+  @media only screen and (max-width: $firstBreak) {
+    display: none;
+  }
+
+  &:hover {
+    transform: translateX(-20px);
+    cursor: pointer;
+  }
+}
+
+.films-main {
+  min-width: 100%;
+  background-color: #00ffab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  @media only screen and (max-width: $firstBreak) {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .films-main-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media only screen and (max-width: $firstBreak) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .left {
+    width: 40vw;
+
+    @media only screen and (max-width: $firstBreak) {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 80%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    #dvd-1,
+    #dvd-2 {
+      width: 35vw;
+      position: relative;
+      @media only screen and (max-width: $firstBreak) {
+        width: 100%;
+      }
+
+      &:hover{
+        transform: translateX(-20px);
+      }
+    }
+
+    #dvd-2 {
+      left: 2vw;
+
+      a {
+        top: 1vw;
+        left: 2vw;
+        font-size: 1.5vw;
+
+        @media only screen and (max-width: $firstBreak) {
+          top: 2.5vw;
+          left: 2vw;
+          font-size: 3vw;
+        }
+      }
+    }
+
+    #dvd-1 {
+      a {
+        top: 0.4vw;
+        left: 3vw;
+        font-size: 1.5vw;
+
+        @media only screen and (max-width: $firstBreak) {
+          top: 1.5vw;
+          left: 3vw;
+          font-size: 3vw;
+        }
+      }
+    }
+
+  }
+
+  .right {
+    height: 32vw;
+    display: flex;
+
+    @media only screen and (max-width: $firstBreak) {
+      display: flex;
+      transform: rotate(90deg);
+      height: 76vw;
+      position: relative;
+      top: -2.5vw;
+    }
+
+    .dvd-wrap{
+      &:hover{
+        transform: translateY(-20px);
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: 100%;
+
+      @media only screen and (max-width: $firstBreak) {
+        width: 4.5vw;
+      }
+    }
+
+    a {
+      position: absolute;
+      color: white;
+      font-size: 1.5vw;
+    }
+
+    #dvd-3 {
+        @media only screen and (max-width: $firstBreak) {
+          position: relative;
+          right: 17vw;
+
+        a {
+          position: absolute;
+          top:57vw;
+          right: -12vw;
+          font-size: 3vw;
+          transform: rotate(270deg);
+        }
+      }
+      }
+
+      #dvd-4 {
+        @media only screen and (max-width: $firstBreak) {
+          position: relative;
+          right: 17vw;
+
+        a {
+          position: absolute;
+          top:10vw;
+          right: -19vw;
+          font-size: 3vw;
+          transform: rotate(270deg);
+        }
+      }
+      }
+
+      
+      #dvd-5 {
+        @media only screen and (max-width: $firstBreak) {
+          position: relative;
+          right: 17vw;
+
+        a {
+          position: absolute;
+          top:57vw;
+          right: -12vw;
+          font-size: 3vw;
+          transform: rotate(270deg);
+        }
+      }
+}
+
+      #dvd-6 {
+        @media only screen and (max-width: $firstBreak) {
+          position: relative;
+          right: 17vw;
+         
+
+        a {
+          position: absolute;
+          top:56vw;
+          right: -7.5vw;
+          font-size: 3vw;
+          transform: rotate(270deg);
+        }
+      }
+      }
+
+      #dvd-7 {
+        @media only screen and (max-width: $firstBreak) {
+          position: relative;
+          right: 17vw;
+         
+
+        a {
+          position: absolute;
+          top:56vw;
+          right: -12vw;
+          font-size: 3vw;
+          transform: rotate(270deg);
+        }
+      }
+      }
+
+    
+
+    @media only screen and (min-width: $firstBreak) {
+      #dvd-3 {
+        a {
+          transform: rotate(90deg);
+          right: -6.1vw;
+          top: 8.5vw;
+        }
+      }
+
+      #dvd-5 {
+        transform: rotate(-3deg);
+
+        a {
+          transform: rotate(90deg);
+          right: -6.1vw;
+          top: 8.5vw;
+        }
+      }
+
+      #dvd-6 {
+        transform: rotate(-4deg);
+      }
+      #dvd-7 {
+        transform: rotate(-6deg);
+
+        a {
+          transform: rotate(90deg);
+          right: -6.2vw;
+          top: 8.5vw;
+        }
+      }
+    }
+  }
+
+  .dvd-wrap {
+    position: relative;
+    transition: ease 0.3s;
+    margin-right: 1.5vw;
+
+    a {
+      position: absolute;
+      color: white;
+    }
+  }
+}
+
+#botm-sign {
+  width: 10vw !important;
+  position: relative;
+  left: 2.5vw;
+  transition: ease 0.3s;
+
+  &:hover {
+    transform: skewX(20deg);
+  }
+
+  @media only screen and (max-width: $firstBreak) {
+    display: none;
+  }
+}
+
+#header-body-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*mobile */
+
+.books-films-nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media only screen and (min-width: $firstBreak) {
+    display: none;
+    padding-top: 50px;
+  }
+
+  display: flex;
+
+  h1 {
+    &:nth-child(1) {
+      padding-right: 60px;
+    }
+  }
+}
+
+.player-video-wrap {
+  position: relative;
+
+  video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-wrap {
+  background-color: grey;
+  width: 100%;
+  position: absolute;
+  top: 1.6vw;
+  left: 1.2vw;
+  width: 38vw;
+  height: 27vw;
+  z-index: 0;
+
+  @media only screen and (max-width: $firstBreak) {
+    width: 73vw;
+    left: 2.3vw;
+    top: 3.15vw;
+    height: 52vw;
+  }
+}

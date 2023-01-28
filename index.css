@@ -1,0 +1,95 @@
+main {
+  display: flex;
+  overflow: hidden;
+}
+
+a {
+  display: block;
+  align-self: flex-start;
+}
+
+.main-left {
+  width: 35%;
+  background-color: black;
+}
+.main-left .main-left-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.main-left .main-left-img-wrap {
+  width: 45%;
+  margin-bottom: 20px;
+}
+.main-left .main-left-img-wrap img {
+  width: 100%;
+}
+.main-left p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.main-right {
+  height: 1000px;
+  flex: 1;
+  background-image: url("/images/index-main-bg.png");
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+.main-right a {
+  color: black;
+  position: absolute;
+  text-align: center;
+}
+.main-right .main-right-img {
+  width: 100%;
+}
+.main-right .les-mis-wrap {
+  position: absolute;
+  width: 22vw;
+  left: 5vw;
+  top: 3vw;
+}
+.main-right .fred-hampton-wrap {
+  position: absolute;
+  z-index: 0;
+  width: 18vw;
+  left: 35vw;
+  top: -2vw;
+}
+.main-right .angela-davis-wrap {
+  position: absolute;
+  z-index: 0;
+  width: 18vw;
+  left: 8vw;
+  top: 37vw;
+}
+.main-right .know-your-rights {
+  color: black;
+  left: 22%;
+  top: 460px;
+  font-size: 2vw;
+}
+.main-right .fist-wrap {
+  position: absolute;
+  z-index: 0;
+  width: 13vw;
+  left: 29vw;
+  top: 32vw;
+}
+.main-right .uk-innocent-wrap {
+  position: absolute;
+  z-index: 0;
+  width: 20vw;
+  left: 45vw;
+  top: 42.5vw;
+}/*# sourceMappingURL=index.css.map */
